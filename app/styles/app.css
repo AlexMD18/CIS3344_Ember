@@ -866,6 +866,86 @@ i {
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
+/* added for host page START*/
+#hostContainer {
+  color: rgb(32, 32, 32);
+  font-family: Raleway;
+  background-image: url("https://i.pinimg.com/originals/4f/34/7a/4f347ad2ca2832b6d43a125f39d80b4c.jpg");
+  background-size: 1950px 1250px;
+  background-repeat: no-repeat;
+}
+
+#hostAStay {
+  text-align: center;
+  padding: 15px;
+}
+#labelHost {
+  padding-bottom: 50px;
+}
+#title, #owner, #city, #state, #country, #kitchen, #property,
+#image, #bedrooms, #bathrooms, #wifi, #price,#description  {
+  margin: 5.5px 0;
+  outline: none;
+  border: none;
+  position: inherit;
+  padding: 8px 25px;
+}
+#leftRight {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#rightSide, #leftSide {
+  width: 15%;
+  min-width: 15%;
+}
+#hostButton {
+  outline: none;
+  border: none;
+  margin: 18px 0;
+  padding: 20px 40px;
+  background: #FFD152;
+  font-family: Raleway;
+  color: #282627;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  cursor: pointer;
+  position: inherit;
+}
+
+#hostButton:hover {
+  background-color: rgb(236, 191, 65);
+}
+#clearDiv {
+  padding: 25px;
+}
+#newProperties {
+  padding: 20px;
+}
+#showNew {
+  padding: 15px;
+  margin: 20px;
+}
+
+#propertiesDiv {
+  padding: 30px;
+}
+#propertyTitle {
+  padding: 35px;
+}
+
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  
+  padding: 0;
+}
+
+/* added for host page  END*/
 
 .footer {
   background-color: black;
