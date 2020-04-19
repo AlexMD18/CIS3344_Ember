@@ -63,6 +63,7 @@
       this.kitchen = kitchen;
       this.property = property;
       this.image = image;
+      this.city = city;
       this.bedrooms = bedrooms;
       this.bathrooms = bathrooms;
       this.wifi = wifi;
@@ -86,18 +87,19 @@
       let price = document.getElementById("price").value;
       let description = document.getElementById("description").value;
 
-      console.log(title);
+      //console.log(title);
 
       let newPropertyObject = new propertyClass(title, owner, city, state, country, kitchen, property, image, bedrooms, bathrooms, wifi, price, description);
       newProperties.push(newPropertyObject);
 
 
-      console.log(newProperties);
-     // console.log(document.getElementById("yo").value);
-
+    
+ 
       for (let i = 0; i < newProperties.length; i++) {
-        window.localStorage.setItem("property" + i, JSON.stringify(newProperties[i]));
-       
+
+          if((localStorage.getItem("property") + i)) {
+        window.localStorage.setItem("property" + i+1, JSON.stringify(newProperties[i]));
+          }
     }
     console.log(localStorage);
   }
